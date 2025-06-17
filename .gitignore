@@ -1,0 +1,17 @@
+
+### 📄 `.gitignore` (Wichtig!)
+```gitignore
+# Data files
+/data/*.csv
+*.xlsx
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints
+
+# VSCode or Jupyter config
+.vscode/
+.env
+
+
