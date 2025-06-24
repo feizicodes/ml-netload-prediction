@@ -27,4 +27,7 @@ __pycache__/
 *.db
 .DS_Store
 
+#igonre merge.ipynb
+merge.ipynb
+
 
