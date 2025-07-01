@@ -4,25 +4,24 @@ import psycopg
 from dotenv import load_dotenv
 import os
 
-results = [
-    {"Modell": "LightGBM (Tuned)", "MAE": 6.681966, "R²": 0.817888},
-    {"Modell": "XGBoost (Tuned)", "MAE": 6.718120, "R²": 0.816895},
-    {"Modell": "Gradient Boosting (Tuned)", "MAE": 6.767416, "R²": 0.815283},
-    {"Modell": "Random Forest (Tuned)", "MAE": 6.812293, "R²": 0.810305},
-    {"Modell": "KNN (Tuned)", "MAE": 7.737779, "R²": 0.762368},
-    {"Modell": "SVR (Tuned)", "MAE": 8.278710, "R²": 0.726893},
-    {"Modell": "Ridge Regression (Tuned)", "MAE": 9.410748, "R²": 0.676191},
-    {"Modell": "Lasso Regression (Tuned)", "MAE": 9.410739, "R²": 0.676191}
-]
+# results = [
+#     {"Modell": "XGBoost (Tuned)", "MAE": 6.755709, "R²": 0.813803},
+#     {"Modell": "Gradient Boosting (Tuned)", "MAE": 6.804205, "R²": 0.812173},
+#     {"Modell": "LightGBM (Tuned)", "MAE": 6.825612, "R²": 0.810949},
+#     {"Modell": "Random Forest (Tuned)", "MAE": 6.904226, "R²": 0.804118},
+#     {"Modell": "Ridge Regression (Tuned)", "MAE": 7.411271, "R²": 0.781098},
+#     {"Modell": "Lasso Regression (Tuned)", "MAE": 7.411931, "R²": 0.781085},
+#     {"Modell": "KNN (Tuned)", "MAE": 8.361397, "R²": 0.719521},
+#     {"Modell": "SVR (Tuned)", "MAE": 8.530035, "R²": 0.706889}
+# ]
 
-
-st.title("Model Comparison Results")
-results_df = pd.DataFrame(results).sort_values("R²", ascending=False)
-st.dataframe(
-    results_df.style
-    .background_gradient(cmap="Blues", subset=["R²"])
-    .format({"MSE": "{:.2f}", "R²": "{:.4f}"})
-)
+# st.title("Model Comparison Results")
+# results_df = pd.DataFrame(results).sort_values("R²", ascending=False)
+# st.dataframe(
+#     results_df.style
+#     .background_gradient(cmap="Blues", subset=["R²"])
+#     .format({"MSE": "{:.2f}", "R²": "{:.4f}"})
+# )
 
 # === Umgebungsvariablen laden (für spätere Nutzung, z. B. für Supabase) ===
 load_dotenv()
