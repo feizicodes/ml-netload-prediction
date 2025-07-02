@@ -8,12 +8,14 @@ import os
 #     {"Modell": "XGBoost (Tuned)", "MAE": 6.755709, "R²": 0.813803},
 #     {"Modell": "Gradient Boosting (Tuned)", "MAE": 6.804205, "R²": 0.812173},
 #     {"Modell": "LightGBM (Tuned)", "MAE": 6.825612, "R²": 0.810949},
+#     {"Modell": "SVR (Tuned)", "MAE": 6.809984, "R²": 0.806794},
 #     {"Modell": "Random Forest (Tuned)", "MAE": 6.904226, "R²": 0.804118},
+#     {"Modell": "KNN (Tuned)", "MAE": 7.022471, "R²": 0.798374},
 #     {"Modell": "Ridge Regression (Tuned)", "MAE": 7.411271, "R²": 0.781098},
 #     {"Modell": "Lasso Regression (Tuned)", "MAE": 7.411931, "R²": 0.781085},
-#     {"Modell": "KNN (Tuned)", "MAE": 8.361397, "R²": 0.719521},
-#     {"Modell": "SVR (Tuned)", "MAE": 8.530035, "R²": 0.706889}
+
 # ]
+
 
 # st.title("Model Comparison Results")
 # results_df = pd.DataFrame(results).sort_values("R²", ascending=False)
